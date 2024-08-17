@@ -1,0 +1,50 @@
+<!-- <form id="menuForm" action="/add-pizza" method="POST" enctype="multipart/form-data">
+    
+</form> -->
+<section class="login flex justify-center pt-24">
+    <div class="w-full max-w-xs">
+        <form id="menuForm" action="/add-pizza" method="POST" enctype="multipart/form-data" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                   Pizza Name
+                </label>
+                <input name="name"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name" type="text" required placeholder="Enter pizza name">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="price">
+                    Price
+                </label>
+                <input name="price"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="price" type="number" required placeholder="Enter price">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="size">
+                    Size
+                </label>
+                <input name="size"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                    id="size" type="text" required placeholder="******************">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="size">
+                    Image
+                </label>
+                <input name="image"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                    id="image" type="file" accept="image/*" required placeholder="">
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Add Pizza
+                </button>
+            </div>
+            
+        </form>
+        <p class="text-center text-gray-500 text-xs">
+            &copy;2023 A Company. All rights reserved.
+        </p>
+    </div>
+</section>
