@@ -13,7 +13,7 @@ const passport=require('passport')
 const Emitter=require("events")
 
 //Database Connection
-mongoose.connect("mongodb://127.0.0.1:27017/PizzaApp").then((data)=>{
+mongoose.connect("mongodb+srv://souvik:Souvik8918@cluster0.hypqczx.mongodb.net/PizzaApp").then((data)=>{
     console.log("Database connected");
 })
 
@@ -27,7 +27,7 @@ app.use(session({
     resave:false,
     saveUninitialized:false,
     store: MongoDbStore.create({
-        mongoUrl: 'mongodb://127.0.0.1:27017/PizzaApp'
+        mongoUrl: 'mongodb+srv://souvik:Souvik8918@cluster0.hypqczx.mongodb.net/PizzaApp'
       }),
     cookie:{maxAge:1000*60*60*12}
 }))
